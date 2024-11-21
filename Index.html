@@ -3,67 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aubysx</title>
+    <title>Aubysx - Official Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
+
         header {
             background-color: #282c34;
-            color: white;
+            text-align: center;
             padding: 20px;
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
         }
+
         nav {
             margin: 20px 0;
+            text-align: center;
         }
+
         nav a {
             text-decoration: none;
-            color: #282c34;
+            color: #61dafb;
             font-weight: bold;
             margin: 0 15px;
+            font-size: 1.2em;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #ffffff;
         }
+
         .content {
             margin: 20px;
+            text-align: center;
         }
-        .info {
-            margin-top: 40px;
+
+        .info, .new-songs, .spotify, .tiktok {
+            background-color: #2a2a2a;
             padding: 20px;
-            background-color: #eaeaea;
-            border-radius: 8px;
-            display: inline-block;
-            text-align: left;
+            margin: 20px auto;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .info h2, .new-songs h2, .spotify h2, .tiktok h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #61dafb;
+        }
+
+        a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .new-songs p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #282c34;
+            color: #61dafb;
+        }
+
+        footer a {
+            color: #61dafb;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Aubysx</h1>
+        <h1>AubysX</h1>
+        <p>The Official Website</p>
     </header>
     <nav>
+        <a href="#new-songs">New Songs</a>
         <a href="#spotify">Spotify</a>
         <a href="#info">Info</a>
+        <a href="#tiktok">TikTok</a>
     </nav>
-    <div class="content" id="spotify">
+    <div class="content new-songs" id="new-songs">
+        <h2>New Release!</h2>
+        <p><strong>Album:</strong> <span style="color: #fff;">*School Out Now!!!*</span></p>
+        <p>Listen here: <a href="https://open.spotify.com/album/0wbLDgXy1RWDd0Mg7TxP4V?si=akeGlEzlStCjB2XlgYMcJw" target="_blank">Click to Listen</a></p>
+    </div>
+    <div class="content spotify" id="spotify">
         <h2>Spotify Artist</h2>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7je4kqg387H52VJd0MnqX1?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-    <div class="content" id="info">
+    <div class="content info" id="info">
         <h2>Info</h2>
-        <div class="info">
-            <p><strong>Ran by:</strong> Travis Wood</p>
-            <p><strong>Contact Email:</strong> <a href="mailto:tw745723@gmail.com">tw745723@gmail.com</a></p>
-        </div>
+        <p><strong>Managed by:</strong> Self-managed by Travis Wood / AubysX</p>
+        <p><strong>Real Name:</strong> Travis Wood</p>
+<p><strong>Business Email:</strong> 
+   <a href="https://mail.google.com/mail/?view=cm&to=tw745723@gmail.com&su=Business%20Inquiry&body=Hello%20AubysX">tw745723@gmail.com</a>
+</p>
+
+        <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@aubysx" target="_blank">@aubysx</a></p>
     </div>
+    <div class="content tiktok" id="tiktok">
+        <h2>Follow on TikTok</h2>
+        <p><a href="https://www.tiktok.com/@aubysx" target="_blank">@aubysx</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 AubysX. ("I suck at making sites")</p>
+    </footer>
 </body>
 </html>
